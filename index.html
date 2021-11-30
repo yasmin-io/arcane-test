@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arcane</title>
+    <style>
+      body {
+        background: #060e1f;
+      }
+      h3 {
+        color: #c9aa71;
+        text-align: center;
+        font-weight: Lighter;
+      }
+      .title {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+      }
+
+      h5 {
+        color: #bcc0cd;
+        text-align: center;
+        margin-top: 0px;
+      }
+
+      hr {
+        max-width: 70%;
+        min-width: 70%;
+      }
+
+      .jinx {
+        display: block;
+        margin: 0 auto;
+        max-width: 500px;
+        border-radius: 3px;
+      }
+
+      .para {
+        color: #e6e6c6;
+        line-height: 1.5;
+        font-size: 20px;
+        max-width: 50%;
+        text-align: justify;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+
+      ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        justify-content: center;
+        display: flex;
+      }
+
+      button {
+        height: 50px;
+        color: #785a28;
+        display: block;
+        margin: 0 auto 20px auto;
+        padding: 10px 30px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bolder;
+        font-size: 18px;
+        background-color: #e6e6c6;
+        border-radius: 25px 25px 25px 25px;
+        border: 1px solid #785a28;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        color: #e6e6c6;
+      }
+
+      .Company {
+        display: block;
+        text-decoration: none;
+        color: #785a28;
+        font-size: 17px;
+        margin: 10px;
+      }
+
+      .Company:hover {
+        text-decoration: underline;
+      }
+
+      .wiki {
+        display: block;
+        color: #785a28;
+        text-decoration: none;
+        font-size: 17px;
+        margin: 10px;
+      }
+
+      .wiki:hover {
+        text-decoration: underline;
+      }
+
+      .author {
+        color: #785a28;
+        text-align: center;
+      }
+      .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h3>COMING SOON</h3>
+      <img
+        class="title"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/589/original/Arcane_Logo_Rendered_MASTER_1500.png?1637719707"
+      />
+      <h5>Every legend has a beginning</h5>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/021/588/original/ezgif-3-e88bf06df353.jpg?1637719663"
+        alt="Arcane Poster"
+        width="400px"
+        class="jinx"
+      />
+      <hr />
+      <p class="para">
+        Arcane is an animated television series set in the League of Legends
+        universe. It is currently being developed and produced by Riot and
+        animated by Fortiche Productions in Paris, France. Arcane dives into the
+        delicate balance between the rich, Utopian city of Piltover Crest
+        Piltover and the seedy, oppressed underground of
+        <strong>Zaun Crest</strong>. Known across Runeterra as the "city of
+        progress," many of the most brilliant minds call these cities home. But
+        the creation of hextech, a way for any person to control magical energy,
+        threatens that balance. The story follows the origins of two iconic
+        League champions-and the power that will tear them apart. Like the game
+        on which it is based, Arcane is aimed at a "16+" audience and will deal
+        with some more adult subject matter.
+      </p>
+      <br />
+      <span>
+        <ul>
+          <li>
+            <a
+              href="https://www.riotgames.com/en"
+              target="_blank"
+              class="Company"
+            >
+              Riot Games Inc.
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Arcane_(TV_series)"
+              target="_blank"
+              class="wiki"
+            >
+              Arcane on Wiki!
+            </a>
+          </li>
+        </ul>
+      </span>
+      <br />
+      <button>Notify Me</button>
+      <p class="author">Coded by <em>Yasmin</em></p>
+    </div>
+    <script>
+      function contactEmail() {
+        let email = prompt("What email would you like us to notify you on?");
+        let Age = prompt("How old are you?");
+
+        if (Age >= 16) {
+          alert(
+            `Thanks! We will email you on ${email} when the show is released.`
+          );
+        } else {
+          alert(`Sorry! You are under the age rating to watch this show.`);
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", contactEmail);
+    </script>
+  </body>
+</html>
